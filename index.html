@@ -1,73 +1,627 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Waseem Ahmad</title>
 
-  <link rel="stylesheet" href="style.css">
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Waseem Hakeem - Software Engineer</title>
+    <meta name="description" content="Passionate Full-Stack Software Engineer crafting digital excellence. Seamlessly navigating front-end finesse and back-end brilliance to bring your ideas to life.">
+    <meta name="author" content="Waseem hakeem">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <!-- script
+    ================================================== -->
+    <script defer src="js/vendor/fontawesome/all.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="manifest" href="site.webmanifest">
+
 </head>
-<body>
-  <aside class="profile-card">
 
-    <header>
-    
-        <!-- here’s the avatar -->
-        <a href="#">
-            <img src="waseem.jpg" />
-        </a>
-        
-        <!-- the username -->
-        <h1>Waseem Ahmad</h1>
-        
-        <!-- and role or location -->
-        <h2>Full-Stack Developer</h2>
-    
-    </header>
-  
-    <!-- bit of a bio; who are you? -->
-    <div class="profile-bio">
-    
-        <p>
-          React | Ruby on Rails | PHP
-        </p>
-    
+<body id="top" class="ss-preload">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader"></div>
     </div>
-  
-    <!-- some social links to show off -->
-    <ul class="profile-social-links">
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+        <div class="row s-header__nav-wrap">
+            <nav class="s-header__nav">
+                <ul>
+                    <li class="current"><a class="smoothscroll" href="#hero">Home</a></li>
+                    <li><a class="smoothscroll" href="#about">About</a></li>
+                    <li><a class="smoothscroll" href="#resume">Resume</a></li>
+                    <li><a class="smoothscroll" href="#portfolio">Works</a></li>
+                    <!-- <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li> -->
+                    <li><a class="smoothscroll" href="#contact">Say Hello</a></li>
+                </ul>
+            </nav>
+        </div> <!-- end row -->
         
-        <!-- twitter - el clásico  -->
-        <li>
-            <a href="https://www.facebook.com/hkwaseem" target="_blank">
-                <svg viewBox="0 0 24 24">
-                    <path fill="#3b5998" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" />
-                </svg>
+        <a class="s-header__menu-toggle" href="#0" title="Menu">
+            <span class="s-header__menu-icon"></span>
+        </a>
+    </header> <!-- end s-header -->
+
+
+    <!-- hero
+    ================================================== -->
+    <section id="hero" class="s-hero target-section">
+
+        <div class="s-hero__bg rellax" data-rellax-speed="-7"></div>
+
+        <div class="row s-hero__content">
+            <div class="column">
+
+                <div class="s-hero__content-about">
+
+                    <h1>I'm Waseem Hakeem.</h1>
+
+                    <h3>
+                        Passionate <span>Full-Stack Software Engineer</span> crafting digital excellence. 
+                        Seamlessly navigating front-end finesse and back-end brilliance to bring your ideas to life. 
+                        Let's <a class="smoothscroll" href="#about">start scrolling</a> and 
+                        code a transformative digital experience and bring your vision into reality.
+                    </h3>
+
+                    <div class="s-hero__content-social">
+                        <a target="_blank" href="https://www.linkedin.com/in/hkwasim/" title="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        <a target="_blank" href="https://github.com/wasimhakim" title="Github"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a target="_blank" href="https://facebook.com/hkwaseem" title="Facebook"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+                        <!-- <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a>
+                        <a href="#0"><i class="fab fa-behance" aria-hidden="true"></i></a> -->
+                    </div>
+
+                </div> <!-- end s-hero__content-about -->
+
+            </div>
+        </div> <!-- s-hero__content -->
+
+        <div class="s-hero__scroll">
+            <a href="#about" class="s-hero__scroll-link smoothscroll">
+                <span class="scroll-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M18.707 12.707L17.293 11.293 13 15.586 13 6 11 6 11 15.586 6.707 11.293 5.293 12.707 12 19.414z"></path></svg>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
             </a>
-        </li>
-        
-        <!-- envato – use this one to link to your marketplace profile -->
-        <li>
-            <a href="https://www.linkedin.com/in/hkwasim/"  target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 40 40" width="24px" height="24px">
-                <path fill="#0288D1" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5V37z"/>
-                  <path fill="#FFF" d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z"/>
-                </svg>
-            </a>
-        </li>
-        
-        <!-- codepen - your codepen profile-->
-        <li>
-            <a href="https://github.com/wasimhakim"  target="_blank">
-              <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 28 28" width="24px" height="24px">    <path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"/></svg>
-            </a>
-        </li>
-        
-        <!-- add or remove social profiles as you see fit -->
+        </div> <!-- s-hero__scroll -->
+
+    </section> <!-- end s-hero -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row">
+            <div class="column large-3 tab-12">
+                <img class="s-about__pic" src="images/avatars/waseem.jpeg" alt="">
+            </div>
+            <div class="column large-9 tab-12 s-about__content">
+                <h3>About Me</h3>
+                <p>
+                    With over 3 years of experience as a software engineer, 
+                    I've cultivated a robust skill set spanning various programming 
+                    languages and technologies such as React Native, Ruby on Rails, and 
+                    SQL. Proficient in test-driven development, I'm dedicated to constructing top-tier, 
+                    well-designed software that excels in both functionality and maintainability. 
+                    My enthusiasm for continuous learning fuels my pursuit of new opportunities, 
+                    fostering growth as a developer. Eager to connect with industry peers, I thrive on 
+                    sharing knowledge and ideas. Beyond coding, I stay abreast of the latest tech 
+                    developments in my spare time. Let's innovate together! 
+                </p>
+
+                <hr>
+
+                <div class="row s-about__content-bottom">
+                    <div class="column w-1000-stack">
+                        <h3>Contact Details</h3>
     
-    </ul>
-  
-  </aside>
+                        <p>
+                        Waseem Hakeem<br>
+                        Mohali, Punjab, India 140307 <br>
+                        <a href="tel:+916006107512">+91 6006 107512</a> <br>
+                        <a href="mailto:wasimhakim90@gmail.com">wasimhakim90@gmail.com</a>
+                        </p>
+                        
+                    </div>
+                    <div class="column w-1000-stack">
+                        <a href="#0" class="btn btn--download">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M12 16L16 11 13 11 13 4 11 4 11 11 8 11z"></path><path d="M20,18H4v-7H2v7c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2v-7h-2V18z"></path></svg>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end row -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- resume
+    ================================================== -->
+    <section id="resume" class="s-resume target-section">
+        
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Career</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Perx Technologies</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Software Engineer</span> 
+                            <span class="resume-block__header-date">
+                                August 2022 - Present
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        As a Full Stack Software Engineer at Perx Technologies, 
+                        I'm the architect behind cutting-edge solutions, weaving seamlessly between 
+                        front-end finesse and back-end robustness. Leveraging technologies like React, 
+                        Ruby on Rails, AngularJs, and databases, I craft intuitive user interfaces and optimize powerful 
+                        backend systems. Committed to test-driven development, 
+                        I ensure our codebase is not just functional but scalable.
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Sarvasv Technologies</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Software Engineer</span> 
+                            <span class="resume-block__header-date">
+                                October 2020 - August 2022
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        As a Full Stack Software Engineer at Sarvasv Technologies, 
+                        I thrive on diversity, overseeing 10+ projects ranging from engaging 
+                        games to robust e-commerce solutions. I bring seamless front-end designs 
+                        and scalable back-end architectures to our gaming experiences, while ensuring 
+                        user-friendly interfaces for cutting-edge e-commerce platforms. Collaborating 
+                        across teams, I contribute my technical prowess to elevate every project, 
+                        embodying Sarvasv's commitment to innovation and excellence. 
+                    </p>
+
+                </div> <!-- end resume-block -->
+            </div>
+        </div> <!-- s-resume__section -->
+
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Education</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">Amity University</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Master of Computer Application in Ai and ML</span> 
+                            <span class="resume-block__header-date">
+                                August 2023
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        Currently pursuing my Masters of Computer Application with a 
+                        specialization in Artificial Intelligence and Machine Learning at 
+                        Amity University. Immersed in the exciting world of cutting-edge 
+                        technology, I am passionate about exploring the realms of AI and ML 
+                        to unravel innovative solutions. Eager to apply theoretical knowledge to 
+                        real-world challenges, I am dedicated to honing my skills and contributing 
+                        to the evolving landscape of computer science. 
+                    </p>
+
+                </div> <!-- end resume-block -->
+
+                <div class="resume-block">
+
+                    <div class="resume-block__header">
+                        <h4 class="h3">University of Kashmir</h4>
+                        <p class="resume-block__header-meta">
+                            <span>Bachelor of Computer Applications</span> 
+                            <span class="resume-block__header-date">
+                                February 2021
+                            </span>
+                        </p>
+                    </div>
+
+                    <p>
+                        A proud graduate with a Bachelor of Computer Application from the 
+                        University of Kashmir, I've laid a strong foundation in the world of 
+                        computer science. My academic journey has equipped me with a diverse 
+                        skill set, fostering a deep understanding of software development, 
+                        algorithms, and system architecture. Ready to embark on new challenges 
+                        and apply my knowledge to real-world scenarios, I am passionate about making meaningful 
+                        contributions to the field of technology. 
+                    </p>
+
+                </div> <!-- end resume-block -->
+            </div>
+        </div> <!-- s-resume__section -->
+
+
+        <div class="row s-resume__section">
+            <div class="column large-3 tab-12">
+                <h3 class="section-header-allcaps">Skills</h3>
+            </div>
+            <div class="column large-9 tab-12">
+                <div class="resume-block">
+
+                    <p>
+                        Armed with a robust set of software engineering skills. 
+                        My expertise extends to full-stack development, where I seamlessly navigate front-end frameworks like 
+                        React.js and back-end technologies like Ruby on Rails. 
+                        Well-versed in database management, I handle SQL and Postgresql with finesse.<br>
+                        Here are some of my primary skills:
+                    </p>
+
+                    <ul class="skill-bars-fat">
+                        <li>
+                        <div class="progress percent90"></div>
+                        <strong>Ruby on Rails</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent85"></div>
+                        <strong>ReactJs</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent80"></div>
+                        <strong>AngularJs</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent90"></div>
+                        <strong>Laraval</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent90"></div>
+                        <strong>CodeIgniter</strong>
+                        </li>
+                        <li>
+                        <div class="progress percent95"></div>
+                        <strong>Web Development</strong>
+                        </li>
+                    </ul>
+
+                </div> <!-- end resume-block -->
+
+            </div>
+        </div> <!-- s-resume__section -->
+
+    </section> <!-- end s-resume -->
+
+
+    <!-- portfolio
+    ================================================== -->
+    <section id="portfolio" class="s-portfolio target-section">
+
+        <div class="row s-portfolio__header">
+            <div class="column large-12">
+                <h3>A Few Of My Work</h3>
+            </div>
+        </div>
+
+        <div class="row collapse block-large-1-4 block-medium-1-3 block-tab-1-2 block-500-stack folio-list">
+
+            <div class="column folio-item">
+                <a href="#modal-01" class="folio-item__thumb">
+                    <img src="images/portfolio/droplet.jpg" 
+                         srcset="images/portfolio/droplet.jpg 1x, 
+                                 images/portfolio/droplet@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-02" class="folio-item__thumb">
+                    <img src="images/portfolio/lamp.jpg" 
+                         srcset="images/portfolio/lamp.jpg 1x, 
+                                 images/portfolio/lamp@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-03" class="folio-item__thumb">
+                    <img src="images/portfolio/minimalismo.jpg" 
+                         srcset="images/portfolio/minimalismo.jpg 1x, 
+                                 images/portfolio/minimalismo@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-04" class="folio-item__thumb">
+                    <img src="images/portfolio/shutterbug.jpg" 
+                         srcset="images/portfolio/shutterbug.jpg 1x, 
+                                 images/portfolio/shutterbug@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-05" class="folio-item__thumb">
+                    <img src="images/portfolio/fuji.jpg" 
+                         srcset="images/portfolio/fuji.jpg 1x, 
+                                 images/portfolio/fuji@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-06" class="folio-item__thumb">
+                    <img src="images/portfolio/skaterboy.jpg" 
+                         srcset="images/portfolio/skaterboy.jpg 1x, 
+                                 images/portfolio/skaterboy@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-07" class="folio-item__thumb">
+                    <img src="images/portfolio/rucksack.jpg" 
+                         srcset="images/portfolio/rucksack.jpg 1x, 
+                                 images/portfolio/rucksack@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+            <div class="column folio-item">
+                <a href="#modal-08" class="folio-item__thumb">
+                    <img src="images/portfolio/sanddunes.jpg" 
+                         srcset="images/portfolio/sanddunes.jpg 1x, 
+                                 images/portfolio/sanddunes@2x.jpg 2x" alt="">
+                </a>
+            </div> <!-- end folio-item -->
+
+        </div> <!-- end folio-list -->
+
+
+        <!-- Modal Templates Popup
+        =========================================================== -->
+        <div id="modal-01" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-droplet.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Droplet</h5>
+                    <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda iure et expedita voluptatem. Ratione officiis quae.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Branding</li>
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-02" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-lamp.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>The Lamp</h5>
+                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Branding</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-03" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-minimalismo.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Minimalismo</h5>
+                    <p>Exercitationem reprehenderit quod explicabo consequatur aliquid ut magni ut. Deleniti quo corrupti illum velit eveniet ratione necessitatibus ipsam mollitia.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-04" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-shutterbug.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Shutterbug</h5>
+                    <p>Dolores velit qui quos nobis. Aliquam delectus voluptas quos possimus non voluptatem voluptas voluptas. Est doloribus eligendi porro doloribus voluptatum.</p>
+                    <ul class="modal-popup__cat">
+                        <li>E-Commerce</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-05" hidden>
+            <div class="modal-popup">
+
+                <img src="images/portfolio/gallery/g-fuji.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Fuji</h5>
+                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-06" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-skaterboy.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Skaterboy</h5>
+                    <p>Quisquam vel libero consequuntur autem voluptas. Qui aut vero. Omnis fugit mollitia cupiditate voluptas. Aenean sollicitudin, lorem quis bibendum auctor.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Branding</li>
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-07" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-rucksack.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Rucksack</h5>
+                    <p>Odio soluta enim quos sit asperiores rerum rerum repudiandae cum. Vel voluptatem alias qui assumenda iure et expedita voluptatem. Ratione officiis quae.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Branding</li>
+                        <li>Product Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+        <div id="modal-08" hidden>
+            <div class="modal-popup">
+                <img src="images/portfolio/gallery/g-sanddunes.jpg" alt="" />
+    
+                <div class="modal-popup__desc">
+                    <h5>Sand Dunes</h5>
+                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                    <ul class="modal-popup__cat">
+                        <li>Web Design</li>
+                    </ul>
+                </div>
+    
+                <a href="https://www.behance.net/" class="modal-popup__details">Project link</a>
+            </div>
+        </div> <!-- end modal -->
+
+
+    </section> <!-- end s-portfolio -->
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
+
+        <div class="row s-contact__header">
+            <div class="column large-12">
+                <h3 class="section-header-allcaps">Say Hello</h3>
+            </div>
+        </div>
+
+        <div class="row s-contact__content">
+
+            <div class="column large-7 medium-12">
+
+                <h4 class="huge-text">
+                Have a new project in mind? Let's collaborate and build something awesome. 
+                Let's turn that idea to an even greater product :)
+                </h4>
+
+            </div>
+
+            <div class="column large-4 medium-12">
+
+                <div class="row contact-infos">
+                    <div class="column large-12 medium-6 tab-12">
+                        <div class="contact-block">
+                            <h5 class="contact-block__header">
+                                Email
+                            </h5>
+                            <p class="contact-block__content">
+                                <a class="mailtoui" style="font-size: 22px;" href="mailto:wasimhakim89@gmail.com">wasimhakim89@gmail.com</a>
+                            </p>
+                        </div> <!-- end contact-block -->
+                    </div>
+                    <div class="column large-12 medium-6 tab-12">
+                        <div class="contact-block">
+                            <h5 class="contact-block__header">
+                                Phone
+                            </h5>
+                            <p class="contact-block__content">
+                                <a href="tel:+916006107512">+91 6006 107512</a>
+                            </p>
+                        </div> <!-- end contact-block -->
+                    </div>
+
+                    <div class="column large-12">
+                        <a href="mailto:wasimhakim89@gmail.com" class="mailtoui btn btn--primary h-full-width">Let's Talk</a>
+                    </div>
+                </div> <!-- end contact-infos -->
+
+            </div>
+        </div> <!-- s-contact__content -->
+
+    </section> <!-- end s-contact -->
+    
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer">
+        <div class="row">
+            <div class="column large-4 medium-6 w-1000-stack s-footer__social-block">
+                <ul class="s-footer__social">
+                    <li><a target="_blank" href="https://www.linkedin.com/in/hkwasim"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                    <li><a target="_blank" href="https://www.github.com/wasimhakim"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                    <li><a target="_blank" href="https://www.facebook.com/hkwaseem"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="column large-7 medium-6 w-1000-stack ss-copyright">
+                <span>© Waseem Hakeem 2024</span>
+            </div>
+        </div>
+
+        <div class="ss-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4h12v2H6zm5 10v6h2v-6h5l-6-6-6 6z"/></svg>
+             </a>
+        </div> <!-- end ss-go-top -->
+    </footer>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>
